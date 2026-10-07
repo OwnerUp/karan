@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#020617" />
+  <title>KARAN REPORTER™ | Cricket Updates</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1104730318736217');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1104730318736217&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:#020617;font-family:Arial,Helvetica,sans-serif}
+    body{
+      min-height:100svh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow-x:hidden;
+      background:
+        radial-gradient(circle at 50% 10%, rgba(0,136,255,.23), transparent 34%),
+        radial-gradient(circle at 50% 90%, rgba(255,0,51,.18), transparent 34%),
+        #020617;
+      padding:10px;
+    }
+
+    .page{
+      position:relative;
+      width:min(100%,430px);
+      aspect-ratio:1/2;
+      border-radius:28px;
+      overflow:hidden;
+      background-image:url('assets/karan-reporter-banner.png');
+      background-repeat:no-repeat;
+      background-size:200% 100%;
+      background-position:left center;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,.08),
+        0 0 28px rgba(0,153,255,.42),
+        0 22px 70px rgba(0,0,0,.72);
+      animation:cardGlow 2.6s ease-in-out infinite alternate;
+    }
+
+    .page::after{
+      content:"";
+      position:absolute;
+      inset:-30%;
+      pointer-events:none;
+      background:linear-gradient(115deg, transparent 42%, rgba(255,255,255,.12) 48%, transparent 54%);
+      transform:translateX(-70%);
+      animation:shine 5s ease-in-out infinite;
+    }
+
+    .join-hitbox{
+      position:absolute;
+      left:7%;
+      right:7%;
+      bottom:4.5%;
+      height:12.5%;
+      z-index:5;
+      border-radius:999px;
+      text-indent:-9999px;
+      overflow:hidden;
+      -webkit-tap-highlight-color:transparent;
+    }
+
+    .join-hitbox::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:inherit;
+      box-shadow:0 0 22px rgba(0,205,255,.58);
+      animation:pulse 1.55s ease-in-out infinite;
+    }
+
+    @keyframes pulse{
+      0%,100%{transform:scale(1);opacity:.35}
+      50%{transform:scale(1.025);opacity:.9}
+    }
+    @keyframes shine{
+      0%,65%{transform:translateX(-75%)}
+      85%,100%{transform:translateX(75%)}
+    }
+    @keyframes cardGlow{
+      from{box-shadow:0 0 0 1px rgba(255,255,255,.08),0 0 18px rgba(0,153,255,.30),0 22px 70px rgba(0,0,0,.72)}
+      to{box-shadow:0 0 0 1px rgba(255,255,255,.11),0 0 34px rgba(0,153,255,.58),0 22px 70px rgba(0,0,0,.72)}
+    }
+
+    @media (max-width:480px){
+      body{padding:0;background:#000}
+      .page{width:100vw;max-width:none;min-height:100svh;aspect-ratio:auto;border-radius:0;background-size:200% 100%;box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="KARAN REPORTER cricket updates landing page">
+    <a
+      class="join-hitbox"
+      href="https://t.me/+vyadk8QJNsRiMDFl"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Join KARAN REPORTER on Telegram"
+      onclick="try{fbq('track','Lead');fbq('trackCustom','TelegramJoinClick')}catch(e){}"
+    >Join on Telegram</a>
+  </main>
+</body>
+</html>
